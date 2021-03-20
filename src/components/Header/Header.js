@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             <nav className="container">
@@ -15,7 +15,9 @@ const Header = () => {
                         <Link to="/destination">Destination</Link>
                         <Link to="blog">Blog</Link>
                         <Link to="/contact">contact</Link>
-                        <Link className="active" to="/login">Login</Link>
+                        {/* {props.newUser?  <Link className="active" to="/login">Login</Link>:<p>{props.user}</p>} */}
+
+                        {props.success? <h4 style={{display:"inline-block"}}>{props.userName}</h4>:<Link className="active" to="/login">Login</Link>}
                     </div>
                 </div>
             </nav>
