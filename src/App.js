@@ -1,3 +1,4 @@
+import { createContext,useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,10 +10,11 @@ import Home from './components/Home/Home';
 import NoMatch from "./components/NoMatch/NoMatch";
 import LogIn from './LogIn/LogIn';
 
+export const UserContext = createContext();
 function App() {
+  const [loogedInUser,setLoggedInUser] = useState({});
   return (
-    <div className="App">
-      
+    <UserContext.Provider value={[loogedInUser,setLoggedInUser]}>
       <Router>
         <Switch>
           <Route path="/home">
@@ -29,8 +31,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    
-    </div>
+      </UserContext.Provider>
   );
 }
 

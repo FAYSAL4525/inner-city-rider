@@ -1,0 +1,34 @@
+.home-bg-img{
+    background-image: url("../../images/Bg.png");
+    background-size:contain;
+    height: 650px;
+
+}
+.card{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+}
+.card-img{
+    position: relative;
+    /* background-color: white; */
+  
+}
+.card-img img{
+    position: absolute;
+    height:190px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding:30px;
+    border-radius: 5px;
+   
+}
+.card-img img:hover{
+     /* width:100%;
+     height:190px; */
+     /* border: 2px solid lightgrey; */
+     background-color: lightgrey;
+    
+}
