@@ -9,7 +9,7 @@ height:650px;
 
 }
 .pick-vehaicale{
-    margin-top: 30px;
+    margin-top: 10px;
  width:30%;
  border-right: 1px solid gray;
  
@@ -26,7 +26,7 @@ height:650px;
 .form-container{
   
     width:80%;
-    height:200px;
+    height:220px;
     padding: 10px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -85,7 +85,7 @@ height:650px;
 }
 .ticket-card samp img{
     height:30px;
-    width: 30px;
+    width: 25px;
 }
 .man-count{
     margin-left: -10px;
@@ -95,9 +95,9 @@ height:650px;
 }
 .connector-container{
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
-.connector-container h4{
+.connector-container h5{
     color:white;
     margin-top: -6px;
     margin-left: -10px;
@@ -112,13 +112,42 @@ height:650px;
 }
 .round-connect{
     border-left: 1px solid white;
-    height:50px;
+    height:44px;
     margin-left: 5px;
     
 }
 .destination-map{
-    margin: 30px;
+    margin: 30px 0px 30px 30px;
+  
 }
-.destination-map{
+.destination{
     background-color: #9BE3F6;
 }
+.form-container h6{
+    color:white!important;
+}
+
+@media screen and (max-width: 500px) {
+    .destination-container{
+        display: block;
+        height: 800px;;  
+        }
+        .destination{
+            background-color: #9BE3F6;
+        }
+        .pick-vehaicale{
+            margin-top: 10px;
+         width:100%;
+         margin-bottom: 20px;
+         border: none;
+         
+        }
+        .destination-map{
+            height:250px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-bottom: 10px; 
+        }
+  }
+

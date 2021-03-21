@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { UserContext } from '../../App';
 import Header from '../Header/Header';
+import Map from '../Map/Map';
 import './Destination.css'
-import Map from '../../images/Map.png';
+// import Map from '../../images/Map.png';
 
 const Destination = () => {
     const [loggedInUser, setLoggedInUser, vehicaleData] = useContext(UserContext);
@@ -14,12 +15,12 @@ const Destination = () => {
             <div className="container">
                 <div className="destination-container">
                     <div className="pick-vehaicale">
-                        <h3 className="city-rider-header">INNER-CITY RIDER</h3>
+                        <h4 className="city-rider-header">INNER-CITY RIDER</h4>
                         {
                             submitChange ? <form onClick={() => setSubmitChange(!submitChange)} className="form-container">
-                                <h5>Pick From</h5>
+                                <h6>Pick From</h6>
                                 <input type="text" name="" id="" placeholder="Mirpur 1" /><br />
-                                <h5>Pick To</h5>
+                                <h6>Pick To</h6>
                                 <input type="text" name="" id="" placeholder="Dhanmondi" /><br />
                                 <input className="submit" type="submit" value="Search" />
                             </form>
@@ -33,9 +34,9 @@ const Destination = () => {
                                                 <div className="round"></div>
                                             </div>
                                             <div className="connector-container">
-                                                <h4>Mirpur1</h4>
-                                                <br /><br />
-                                                <h4>Dhanmondi</h4>
+                                                <h5>Mirpur1</h5>
+                                                <br />
+                                                <h5>Dhanmondi</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -54,8 +55,7 @@ const Destination = () => {
 
                     </div>
                     <div className="destination-map">
-                        <img src={Map} alt=""/>
-                    {/* <GoogleMaps></GoogleMaps> */}
+                       <Map></Map>
                     </div>
                 </div>
             </div>

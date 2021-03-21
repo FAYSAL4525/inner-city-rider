@@ -12,7 +12,7 @@
     margin-top:60px;
 }
 .create-account-container{
-    height:423px;
+    height:448px;
     width:35%;
     margin: 0 auto;
     margin-top: 0;
@@ -79,6 +79,7 @@ h6{
     text-align: left;
     color: red;
     margin-bottom: 13px;
+    font-size: 14px;
   }
   .btn-container{
     text-align: center;
@@ -107,8 +108,23 @@ h6{
 margin-left:10px;
 
   }
-  button,.tex{
+  button,.icon-tex{
     padding-right:20px!important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+  }
+  @media screen and (max-width: 500px) {
+    .create-account-container{
+        height:auto;
+        width:100%; 
+    }
+    .btn-container{
+        width: 100%;
+        height:auto;
+    }
+    .form-home-bg-img{
+        height:750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
   }
